@@ -27,6 +27,11 @@ export default {
     }
   },
   methods: {
+    /**
+     * Get class name for background of Card
+     * @param age number
+     * @returns string
+     */
     getBackgroundColor(age) {
       if (age < 21) {
         return "CardRed";
@@ -36,6 +41,11 @@ export default {
       }
       return "CardBlue";
     },
+    /**
+     * Format Date to DD/MM/YYYY HH:mm:ss
+     * @param registeredDate number|string
+     * @returns string
+     */
     getFormattedDate(registeredDate) {
       const date = new Date(registeredDate);
 

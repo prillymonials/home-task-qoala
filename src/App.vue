@@ -18,7 +18,7 @@ import CardList from "./components/CardList.vue";
 import ApiService from "./services";
 
 export default {
-  name: "app",
+  name: "App",
   components: {
     AppHeader,
     CardList
@@ -30,7 +30,10 @@ export default {
     };
   },
   computed: {
-    sortedUserList: function() {
+    /**
+     * When activeContent is not empty, need to sort the user list data
+     */
+    sortedUserList() {
       const copiedUserList = [...this.userList];
 
       if (this.activeContent === "color") {
@@ -53,9 +56,16 @@ export default {
     }
   },
   methods: {
+    /**
+     * Set active sort list in header and user list
+     */
     setActiveContent(activeContent) {
       this.activeContent = activeContent;
     },
+    /**
+     * Do the pagination when scroll to bottom or right.
+     * Stop when length is more than 100
+     */
     doPagination() {
       if (this.userList.length < 100) {
         ApiService.getUserList().then(userList => {
@@ -78,6 +88,11 @@ export default {
         });
       }
     },
+    /**
+     * Get age rank for sorting purpose
+     * @param age number
+     * @returns number
+     */
     getAgeRank(age) {
       if (age < 21) {
         return 3;

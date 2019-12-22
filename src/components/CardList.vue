@@ -29,6 +29,10 @@ export default {
     }
   },
   methods: {
+    /**
+     * When user scroll the container, must do the pagination when need 20px
+     * from below or right
+     */
     handleScroll: throttle(function(e) {
       const { width } = getWidthAndHeight();
       let scrollPosition = 0,
