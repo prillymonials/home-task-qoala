@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1577013051289" clover="3.2.0">
-  <project timestamp="1577013051289" name="All files">
+<coverage generated="1577014471947" clover="3.2.0">
+  <project timestamp="1577014471947" name="All files">
     <metrics statements="66" coveredstatements="49" conditionals="30" coveredconditionals="18" methods="18" coveredmethods="15" elements="114" coveredelements="82" complexity="0" loc="66" ncloc="66" packages="5" files="6" classes="6"/>
     <package name="src">
       <metrics statements="29" coveredstatements="29" conditionals="14" coveredconditionals="13" methods="10" coveredmethods="10"/>
@@ -42,10 +42,10 @@
       <file name="Card.vue" path="/Users/cornelius.prilly/Documents/Projects/mine/qoala-home-task/src/components/Card.vue">
         <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
         <line num="31" count="17" type="cond" truecount="2" falsecount="0"/>
-        <line num="32" count="6" type="stmt"/>
-        <line num="34" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="5" type="stmt"/>
+        <line num="34" count="12" type="cond" truecount="2" falsecount="0"/>
         <line num="35" count="6" type="stmt"/>
-        <line num="37" count="5" type="stmt"/>
+        <line num="37" count="6" type="stmt"/>
         <line num="40" count="8" type="stmt"/>
         <line num="42" count="8" type="stmt"/>
       </file>
